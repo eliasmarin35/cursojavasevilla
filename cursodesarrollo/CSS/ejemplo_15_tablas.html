@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+
+        /* Propiedades para tablas CSS
+        - border-collapse - separacion entre celdas
+        - border-spacing - espaciado entre celdas
+        - empty-cells - 
+        - caption-side - 
+        */
+
+        table{
+            border-collapse: separate;
+            border-spacing: 5px;
+            empty-cells: hide;
+            caption-side: bottom;
+        }
+
+        th, td{
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption><strong>Curso de diseño grafico</strong></caption>
+            <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Horas</th>
+                <th>Plazas</th>
+                <th>Horario</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML5</td>
+                    <td colspan="2">20</td>
+                    <!-- <td>20</td> -->
+                    <td>09:00-13:00</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td rowspan="2">40</td>
+                    <td>15</td>
+                    <td rowspan="2">16:00-20:00</td>
+                </tr>
+                <tr>
+                    <td>Usabilidad</td>
+                    <!-- <td>40</td> -->
+                    <td>10</td>
+                    <!-- <td>16:00-20:00</td> -->
+                </tr>
+                <tr>
+                    <td>AJAX</td>
+                    <td>60</td>
+                    <td>20</td>
+                    <td>08:30-12:30</td>
+                    
+                </tr>
+            </tbody>
+        
+        </table>
+    </main>
+</body>
+</html>

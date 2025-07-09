@@ -1,0 +1,28 @@
+ /* Metodo con archivos externos */
+ 
+ p{
+            color:darkgoldenrod;
+        }
+/*Formateamos la página - Reset CSS página informacion sobre reseteo- */
+        * {
+            margin: 5px;
+            padding: 5px; /*padding = Relleno*/
+
+        }
+        /*Selector tipo etiqueta*/
+        p {
+            color: blue;
+        }
+        /*Varias etiquetas usamos "," */
+        h1, p {
+            font-size: x-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /*Selector Descendente*/
+        p span {
+            color: red;
+        }
+        p span a {
+            text-decoration: none;
+        }

@@ -1,0 +1,68 @@
+<!-- Selectores avanzados -->
+ <!-- Control + k y Control + C -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores avanzados</title>
+    <style>
+        /* Espacio es selector descendente
+        p a {
+            text-decoration: none;
+        }
+        /*Selector hijo ">" */
+        p > a {
+            color: red;
+        }
+        /* Selecto adyascente o hermanos "+" */
+
+        p + p a {
+            color: green;
+        }
+        
+        section[arial-label="parr"] {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+       
+    </style>
+</head>
+<body>
+    <h3>Selectore hijos o descendiente directo</h3>
+    <p>Parrafo 1 con un 
+        <a href="#">Enlace</a>
+    </p>
+    <p>Párrafo 2 con un fragmento 
+        <span>fragmento con un 
+            <a href="#">Enlace</a>
+        </span>
+    </p>
+    <section>
+        <p>Parrafo 3 con un 
+        <a href="#">Enlace</a>
+    </p>
+    <p>Párrafo 4 con un fragmento 
+        <span>fragmento con un 
+            <a href="#">Enlace</a>
+        </span>
+    </p>
+    </section>
+    <p>Parrafo 5 con un 
+        <a href="#">Enlace</a>
+    </p>
+    <p>Párrafo 6 con un fragmento 
+        <span>fragmento con un 
+            <a href="#">Enlace</a>
+        </span>
+    <p>Parrafo 7 con un 
+        <a href="#">Enlace</a>
+    </p>
+    
+    </p>
+    <section aria-label="parr"><p>Párrafo 8 con un fragmento 
+        <span>fragmento con un 
+            <a href="#">Enlace</a>
+        </span>
+    </p></section>
+</body>
+</html>

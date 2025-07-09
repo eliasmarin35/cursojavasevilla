@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicion absoluta</title>
+    <style>
+        /* Salimos del flujo y Posicionamos respecto a nuestro contenedor
+            position: absolute*/
+        main {
+            background-color: rgb(64, 121, 121);
+            border: 2px solid blue;
+            width: 800px;
+            height: 600px;
+            position: static;
+            top: 50px;
+            left: 50px;
+        }
+
+        section {
+            background-color: rgba(0, 255, 255, 0.658);
+            border: 2px solid blueviolet;
+            width: 600px;
+            height: 400px;
+            position: absolute;
+            top: 100px;
+            left: 20px;
+        }
+
+        p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 2px solid rgb(34, 57, 58);
+            font-size: 2em;
+            background-color: cadetblue;
+            margin: 20px;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        p:nth-of-type(2){
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section aria-label="deportes">
+            <p>Noticias de la selección española de futbol femenino</p>
+            <p>Noticias de la selección española de futbol masculino</p>
+        </section>
+    </main>
+</body>
+</html>

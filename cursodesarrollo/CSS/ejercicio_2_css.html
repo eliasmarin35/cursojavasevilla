@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Css: cajas y selectores</title>
+    <style>
+        /* Reset básico */
+        body {
+            background-color: #FFFFFF;
+            /* Fondo blanco */
+            color: #2C3E50;
+            /* Texto gris azulado */
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /*Esto que es? por lo que dice la IA es viewport height y 100vh equivale al 100% a la altura de viewport*/
+            /* Para sticky footer  gracias chat GPT*/
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background-color: #004080;
+            /* Azul intenso */
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* h1 más vistoso */
+        h1 {
+            color: #d9e6f2;
+            /* Azul vivo */
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Nav */
+        nav {
+            background-color: #0059b3;
+            /* Azul algo más claro */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #3399ff;
+            /* Azul claro al pasar el ratón */
+        }
+
+        /* Main */
+        main {
+            flex: 1;
+            /* Para empujar footer abajo */
+            padding: 20px;
+        }
+
+        /* h2 */
+        h2 {
+            color: #0059b3;
+            /* Azul intermedio */
+        }
+
+        /* Section */
+        section {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #d9e6f2;
+            /* Azul muy clarito */
+        }
+
+        /* Article */
+        article {
+            background-color: #f2f6fa;
+            /* Fondo gris azulado muy suave */
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #d9e6f2;
+        }
+
+        /* Tablas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        thead {
+            background-color: #0073e6;
+            /* Azul vivo para cabecera */
+            color: #FFFFFF;
+        }
+
+        th,
+        td {
+            border: 1px solid #d9e6f2;
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Footer siempre abajo */
+        footer {
+            background-color: #003366;
+            /* Azul muy oscuro */
+            color: #FFFFFF;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio de Selectores y Cajas</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a> |
+        <a href="#">Acerca de</a> |
+        <a href="#">Contacto</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Tabla de Productos</h2>
+            <p>Esta es una tabla simple que muestra algunos productos de ejemplo:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Camisa</td>
+                        <td>$25</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Pantalón</td>
+                        <td>$40</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Zapatos</td>
+                        <td>$60</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit lacinia ipsum et fermentum.
+                Etiam
+                blandit, ex id convallis tempus, ante neque varius risus, nec dignissim quam magna at ligula. Aliquam
+                ullamcorper
+                consequat turpis in tincidunt. Cras pellentesque quam vitae ante cursus, non blandit sapien consequat.
+                Aenean
+                blandit sapien et mattis aliquet. Integer fermentum nisi sit amet nulla eleifend gravida. Fusce vitae
+                felis
+                consectetur, vestibulum nisl non, efficitur sapien. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Quisque
+                interdum ligula vel leo imperdiet, posuere sollicitudin est ornare. In ornare malesuada orci, vitae
+                viverra purus
+                hendrerit id. Suspendisse eu euismod magna. Vivamus at auctor quam. Fusce vitae vulputate neque, a
+                placerat ex.
+                Suspendisse potenti.
+            </p>
+            <p>
+                Sed ut egestas libero, id finibus sapien. Aliquam id blandit sem. Cras consequat sapien lectus, sed
+                finibus libero dignissim ut. Sed pellentesque elit vitae lectus vestibulum, ut laoreet nunc faucibus.
+                Morbi gravida odio in turpis accumsan fermentum. Etiam mollis interdum imperdiet. Mauris vitae arcu
+                semper lorem consectetur pulvinar eget eu tellus. Mauris blandit purus sit amet leo scelerisque, sed
+                sagittis dui facilisis. Suspendisse vel tortor a lorem finibus rhoncus. Integer vel imperdiet nisl, id
+                mattis ligula. Aliquam vehicula malesuada tristique. Pellentesque in pulvinar massa.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página de Ejemplo. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

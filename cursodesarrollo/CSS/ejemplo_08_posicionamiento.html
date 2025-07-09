@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento CSS</title>
+    <style> 
+        /* Posicionamiento : 
+         - position : static (flujo natural) 
+
+         - position: relative (se posiciona respecto a su posicion original)
+
+                top botton left right
+         - position: fixed (se posiciona respecto a la ventana del navegador)
+
+         - position: absolute (respecto a su contenedor y sale de flujo)
+
+         - position: */
+
+         p {
+            border: 2px solid black;
+            position: static;
+            font-size: medium;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgba(184, 93, 60, 0.822);
+            padding: 30px;
+            margin: 50px;
+         }
+
+         p:nth-of-type(2){
+            background-color: rgba(162, 204, 162, 0.877);
+            position: relative;
+            top: 200px;
+            left: 50px;
+
+         }
+
+         p:nth-of-type(4){
+            background-color: rgb(166, 128, 201);
+            position: fixed;
+            bottom: 150px;
+         }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Posicionamiento:</h1>
+        <nav>
+            <a href="#">enlace 1</a>
+            <a href="#">enlace 2</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Cabecerilla 2</h2>
+
+        <p>El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de
+        hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas
+        es el comportamiento de CSS que hace que todos los elementos de las páginas se representen
+        mediante cajas rectangulares El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de
+        hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas
+        es el comportamiento de CSS que hace que todos los elementos de las páginas se representen
+        mediante cajas rectangularesEl modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de
+        hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas
+        es el comportamiento de CSS que hace que todos los elementos de las páginas se representen
+        mediante cajas rectangulares</p>
+
+        <p>Las cajas de una página se crean
+        automáticamente. Cada vez que se inserta una
+        etiqueta HTML, se crea una nueva caja
+        rectangular que encierra los contenidos de ese elemento. La imagen superior muestra las tres
+        cajas rectangulares que crean las tres etiquetas HTML que incluye la página <br> Las cajas de una página se crean
+        automáticamente. Cada vez que se inserta una
+        etiqueta HTML, se crea una nueva caja
+        rectangular que encierra los contenidos de ese elemento. La imagen superior muestra las tres
+        cajas rectangulares que crean las tres etiquetas HTML que incluye la página Las cajas de una página se crean
+        automáticamente. Cada vez que se inserta una
+        etiqueta HTML, se crea una nueva caja
+        rectangular que encierra los contenidos de ese elemento. La imagen superior muestra las tres
+        cajas rectangulares que crean las tres etiquetas HTML que incluye la página</p>
+        
+        <p>El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de
+        hojas de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas
+        es el comportamiento de CSS que hace que todos los elementos de las páginas se representen
+        mediante cajas rectangulares</p>
+
+        <p>Los navegadores crean y colocan las cajas de
+        forma automática, pero CSS permite modificar
+        todas sus características.</p>
+
+    </section>
+    
+
+</body>
+</html>

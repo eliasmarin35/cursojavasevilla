@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        /*Propiedades de formularios::after
+        - background-color - color de fondo
+        - display - para cambiar el comportamiento de linea, caja del elemento etc.
+        - border-radius - es de CSS3 bordes redondeados
+    
+        */
+        input[required]{
+            background-color: rgb(227, 203, 203);
+            
+        }
+
+        fieldset:nth-of-type(1) label{
+            display: block;
+            width: 100px;x;
+            text-align:right;
+            margin-right: 10px;
+        }
+        fieldset:nth-of-type(2){
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            margin-right: 10px;
+        }
+        fieldset:nth-of-type(1):input{
+            display:inline-block;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 2px;
+        }
+        fieldset:nth-of-type(2):input{
+            display: inline-block;
+            margin: 20px;
+
+        }
+        input::placerholder{
+            color:white;
+        }
+
+        input:focus{
+            background-color: aquamarine;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <h2>Formulario POST</h2>
+    <form action="" method="post">
+        <fieldset>
+            <!-- label+input:text -->
+            <!-- for->id y el name->varible -->
+            <label for="usuario">Usuario :</label>
+            <input type="text" name="usuario" id="usuario" required="required"><br>
+            <!-- label+input:pasword -->
+            <label for="clave">Contraseña :</label>
+            <input type="password" name="clave" id="clave"><br>
+            <!-- label+input:date -->
+            <label for="fechanac">Fecha de nacimiento :</label>
+            <!-- input:submit -->
+            <input type="date" name="fechanac">
+            
+        </fieldset>
+        <fieldset>
+            <legend>HOLA</legend>
+            <!-- label+input:number -->
+             <label for="codpostal">Codigo Postal :</label>
+             <input type="number" name="cod_postal" id="codpostal" min="01000" max="52999"><br>
+             <!-- label+input:email -->
+            <label for="correo">Correo Electronico :</label>
+            <input type="email" name="correo" id="correo" required="required"><br>
+            <!-- label+input:tel -->
+            <label for="telefono">Teléfono :</label>
+            <input type="tel" name="telefono" id="telefono"><br>
+        </fieldset>
+        <fieldset>
+            <label for="comentarios">Comentarios :</label><br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea><br>
+            <!-- label+select>option*3 -->
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia">
+                <option selected disabled>Elije provincia</option>
+                <option value="gr">Granada</option>
+                <option value="se">Sevilla</option>
+                <option value="ca">Cadiz</option>
+                <option value="ba">Badajoz</option>
+            </select><br>
+            <!-- agrupaciones-->
+            <label for="provincia">Provincia con grupos</label>
+            <select name="provincia" id="provincia">
+                <option selected disabled>Elije provincia</option>
+                <optgroup label="Andalucia">
+                    <option value="gr">Granada</option>
+                    <option value="se">Sevilla</option>
+                    <option value="ca">Cadiz</option>
+                </optgroup>
+                <optgroup label="Extremadura">
+                    <option value="ba">Badajoz</option>
+                    <option value="cc">Caceres</option>  
+                </optgroup>
+                
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <p>Seleccione genero :</p>
+            <!-- Anotacion de Emmet (input:radio+label)*2 -->
+            <input type="radio" name="genero" id="hombre" value="hombre">
+            <label for="hombre">Femenino</label><br>
+            <input type="radio" name="genero" id="mujer" value="mujer">
+            <label for="mujer">Masculino</label><br>
+        </fieldset>
+        <fieldset>
+            <p>Seleccione Intereses personales :</p>
+            <!-- Anotacion emmet para checkbox (input:checkbox+label)*3 -->
+            <input type="checkbox" name="intereses[]" id="deportes" value="deporte">
+            <label for="deportes">Deportes</label><br>
+            <input type="checkbox" name="intereses[]" id="informatica" value="informatica">
+            <label for="informatica">informatica</label><br>
+            <input type="checkbox" name="intereses[]" id="musica" value="musica" checked="checked">
+            <label for="musica">Musica</label><br>
+        </fieldset>
+        <fieldset>
+            <!-- label+input:color -->
+            <label for="color">Selecciona Color :</label><br>
+            <input type="color" name="color" id="color"><br>
+            <!-- label+input:file -->
+             <!-- Para cargar archivos en form hay que poner enctype="multipart/form-data" en la etiqueta form -->
+            <label for="cv"></label><br>
+            <input type="file" name="cv" id="cv"><br>
+            <!-- input:hidden -->
+             <input type="hidden" name="oculto"><br>
+        </fieldset>
+        <input type="submit" value="Enviar"><br>
+        <input type="reset" value="Borrar">
+    
+    
+    
+    </form>
+</body>
+</html>

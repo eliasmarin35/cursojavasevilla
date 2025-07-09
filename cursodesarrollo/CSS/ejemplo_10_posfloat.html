@@ -1,0 +1,57 @@
+<!-- ejemplo_10_posFlotante.html -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Flotante</title>
+    <style>
+        /* Posicionamiento flotante: 
+        float: left | right
+        clear: left | right | both */
+
+        main {
+            border: 2px solid red;
+            margin: 20px;
+            height: 400px;
+        }
+
+        section {
+            margin: 30px;
+            font-variant: s;
+        }
+
+        section[aria-label="izq"] {
+            border: 2px solid blue;
+        }
+
+        section[aria-label="cen"] {
+            border: 2px solid green;
+        }
+
+        section[aria-label="der"] {
+            border: 2px solid violet;
+        }
+
+        p {
+            margin: 30px;
+            background-color: aqua;
+            padding: 5px;
+        }
+
+    </style>
+ </head>
+ <body>
+    <main>
+        <section aria-label="izq">
+            <p>Párrafo izquierda</p>
+        </section>
+        <section aria-label="cen">
+            <p>Párrafo central</p>
+        </section>
+        <section aria-label="der">
+            <p>Párrafo derecha</p>
+        </section>
+    </main>
+ </body>
+ </html>

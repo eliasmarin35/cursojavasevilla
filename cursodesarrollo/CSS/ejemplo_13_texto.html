@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Texto en CSS</title>
+    <style>
+        /* Propiedades de texto ::after
+        
+            - text-aling - alineación
+            - line-height - interlineado
+            - text-decporation - techado, sobrerayado, ...
+            - text-transform - modo (mayusculas, minusculas. oración, etc)
+            - vertical-align - alineacion vertical
+            - text -indent - sangria
+            - letter-spacing - esciado entre letras
+            - word-spacing - espacio entre palabras
+            - white-space - espacios en blanco
+        
+        Pseudo Elementos :
+        
+            - :first-line - sangria primera linea
+            - :first-letter - letra capital
+        */
+        
+        p:nth-of-type(1){
+            text-align: right;
+            letter-spacing: 0.5px;
+            word-spacing: 1em;
+            white-space: pre;
+   
+        }
+
+         p:nth-of-type(2)::first-line{
+            font-weight: bold;
+        }
+
+        p:nth-of-type(2){
+            text-indent: 40px;
+            line-height: 1.5em;
+            text-transform: capitalize;
+        }
+        
+        
+        h1 {
+            text-transform:uppercase;
+        }
+        h1::first-letter{
+            font-size: 2em;
+            color: blue;
+        }
+            
+    </style>
+</head>
+
+<body>
+    <h1>Pino Montano</h1>
+    <p>Pino Montano es un barrio de Sevilla situado al norte de la SE-30 que forma parte del Distrito Norte de Sevilla.</p>
+    <p>
+        En un primer momento, el lugar donde se encuentra Pino Montano fue un área agrícola de olivares donde la tierra
+        estaba dividida y repartida en cortijos. Más tarde, en la segunda mitad del siglo XIX, se construiría una vía de
+        ferrocarril para conectar Sevilla con Córdoba, delimitando así una zona destinada al cultivo y otra a la
+        construcción de viviendas.[2]​ Finalmente, la barriada nace en la década del desarrollismo en España (años
+        1960), cuando Sevilla comienza una expansión, rápida y desordenada, hacia el norte. Desde el momento en el que
+        se asientan las primeras personas en el barrio, alrededor de 1970, este no ha parado de crecer.
+    </p>
+
+</body>
+
+</html>

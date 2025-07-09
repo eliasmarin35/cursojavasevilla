@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 de tablas</title>
+   <style>
+        table, th, td { border: 1px solid red;
+                        padding: 5px 10px;
+                        text-align: center;
+        }
+        #zero {background-color: red;}
+    </style>
+</head>
+<body>
+    <h2>Ejercicio 1 de tablas :</h1>
+    <table>
+        <thead>
+            <tr>
+            <th colspan="5">Animales en peligro de extincion</th>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Cabezas</th>
+            <th>Prevision 2010</th>
+            <th>Prevision 2020</th>
+    
+        </tr>
+        </thead>
+        <tbody>
+         <tr>
+            <td>Ballena</td>
+            <td>6000</td>
+            <td>4000</td>
+            <td>1500</td>
+    
+        </tr>
+        <tr>
+            <td>Oso Pardo</td>
+            <td>50</td>
+            <td id="zero" colspan="2" rowspan="2">0</td>
+    
+    
+        </tr>
+        <tr>
+            <td>Lince</td>
+            <td>10</td>
+    
+    
+    
+        </tr>
+        <tr>
+            <td>Tigre</td>
+            <td>300</td>
+            <td>210</td>
+            <td>210</td>
+    
+        </tr>
+        </tbody>
+       
+    </table><br><br>
+    <table>
+        <tr>
+            <th colspan="4">Climas de america del sur</th>
+            
+        </tr>
+        <tr>
+            <td>Partes de arriba de america del sur, paises como:</td>
+            <td><table>
+                <tr>
+                    <td>Venezuela</td>
+                </tr>
+                <tr>
+                    <td>Colombia</td>
+                </tr>
+                <tr>
+                    <td>Ecuador</td>
+                </tr>
+                <tr>
+                    <td>Peru</td>
+                </tr>
+            </table></td>
+            <td>Partes de abajo de america del Sur, paises como:</td>
+            <td>
+                <table>
+                <tr>
+                    <td>Argentina</td>
+                </tr>
+                <tr>
+                    <td>Chile</td>
+                </tr>
+                <tr>
+                    <td>Uruguay</td>
+                </tr>
+                <tr>
+                    <td>Paraguay</td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Bosque tropical, clima de sabana, clima marítimo con inviernos secos</td>
+            <td colspan="2">Clima maritimo con veranos secos, con inviernos secos, climas frios, clima de estepa, clima desertico</td>
+        </tr>
+    </table>
+    <table>
+        <caption>Análisis ventas anuales</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Año</th>
+                <th colspan="4">Expansion de Ventas</th>
+                
+            </tr>
+            <tr>
+                <th>Producto A</th>
+                <th>Producto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>N-3</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>N-2</td>
+                <td>3</td>
+                <td>5</td>
+                <td>8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>N-1</td>
+                <td>4</td>
+                <td>4</td>
+                <td>7</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th  rowspan="2">AÑO</th>
+                <th>Producto A</th>
+                <th>Producto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>
+            </tr>
+            <tr>
+                <th colspan="4">Expansion de Ventas</th>  
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
