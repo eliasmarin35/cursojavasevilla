@@ -5,11 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS  parte 3</title>
     <style>
-        /* FlexBox */
-    luz
+
+        /* FlexBox - Las cajas las hace flexibles
+        display:flex - podemos definir como estaran dispuestos los elementos */
+        
+        /* Los Pseudo elementos 
+        :nth-child - hijo N de contenedor
+        :nth-of-type - N tipo de elemento
+        */
+        p:nth-of-type(1){
+            background-color: aqua;
+        }
+        main p:nth-child(1){
+            background-color: lightpink;
+        }
+
+        main {
+            display: flex;
+
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+        }
+        footer p{
+            border: 1px solid blue;
+            padding: 5px;
+            align-items: center;
+            display: flex;
+            
+            
+        }
     </style>
 </head>
 <body>
-    
+    <header>
+        <p>Primer parrafo de la cabecera</p>
+    </header>
+    <main>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </main>
+    <footer>
+        <p>Párrafo 1</p>
+        <p>Párrafo 2</p>
+        <p>Párrafo 3</p>
+        <p>Párrafo 4</p>
+    </footer>
 </body>
 </html>

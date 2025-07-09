@@ -2,7 +2,7 @@
 favorited: true
 title: 'APUNTES DIA : 2'
 created: '2025-06-24T07:09:45.942Z'
-modified: '2025-06-27T05:49:34.993Z'
+modified: '2025-07-09T10:10:43.855Z'
 ---
 
 # APUNTES DIA : 2 - MARTES
@@ -185,7 +185,7 @@ Hola hola indices y pies de pagina [^1]
   1. #### se suele usar los h1, ...h6.
   2. #### tam
 
-
+---
 
 
 
