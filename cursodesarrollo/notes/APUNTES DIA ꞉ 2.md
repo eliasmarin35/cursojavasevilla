@@ -1,195 +1,279 @@
 ---
-favorited: true
-title: 'APUNTES DIA : 2'
-created: '2025-06-24T07:09:45.942Z'
-modified: '2025-07-09T10:10:43.855Z'
+title: "\U0001F4D8 Apuntes Clase Iván"
+created: '2025-07-02T12:29:52.741Z'
+modified: '2025-07-09T12:09:44.374Z'
 ---
 
-# APUNTES DIA : 2 - MARTES
+# 📘 Apuntes Clase
 
-
-## Markdown, Notable e instalar Java y VSC
-
-- Instalar java:
-1. Ir a https://www.oracle.com/es/java/technologies/downloads/
-2. Descargar JDK en version LTS, en este caso tenemos la version 21, bajamos el instalador necesario en este caso windwos MSI intaller e instalamos.
-3. Descargamos Visual Studio Code en https://code.visualstudio.com/download
-4. Instalar JDK, configurar **variables de entorno de Java**
-  - Ejecutamos terminal de windows.
-  - SystempropertiesAdvanced
-  - Configuración avanzada del sistema > Variables de entorno.
-  - En variables del sistema, buscamos PATH y doble click y se abre una ventana con las variables de entorno del sistema operativo > Nuevo y creamos una con la direccion local de java que seria **C:\Program Files\Java\jdk-21**
-  - *(Opcional) puedes comprobar si se ha realizado correctamente la instalacion de la variable de enterono ejecutando en consola java --version y con comando javac --verion y si sale la version de java instalada sin error esta todo ok*
-
----
-
-- Instalamos Visual Studio Code y configuramos:
-  - Ya se crea la variable de entorno si esta marcado en el instalador.
-  - Intalar extensiones:
-    - Spanish Language Pack.
-    - Extension Pack for Java.
-    - Extensión Markdown
-    - Markdown all in one
-
-
-*Lo bueno de Java es que puede funcionar en cualquier maquina independientemente del sistema operativo que tenga.*
+- [📘 Apuntes Clase](#-apuntes-clase)
+  - [🔀 Arranque dual](#-arranque-dual)
+  - [💻 IDEs](#-ides)
+  - [☕🖥️ Instalar Java y VSC](#️-instalar-java-y-vsc)
+    - [☕ Instalar Java](#-instalar-java)
+  - [🖥️ Comandos de Consola](#️-comandos-de-consola)
+    - [🪟 Windows (MS-DOS/Powershell)](#-windows-ms-dospowershell)
+    - [🐧 Linux](#-linux)
+    - [🧑‍💻 Instalar Visual Studio Code (VSC)](#-instalar-visual-studio-code-vsc)
+  - [🔧 GIT](#-git)
+    - [📋 Listado de comandos](#-listado-de-comandos)
+      - [🌿 Ramas GIT](#-ramas-git)
+  - [👥 Roles Proyectos](#-roles-proyectos)
+    - [🧑‍🎓 Junior (\< 2-4 años)](#-junior--2-4-años)
+    - [🧑‍💼 Senior (\> 2-4 años)](#-senior--2-4-años)
+  - [🌐 HTML](#-html)
+    - [🏷️ Etiquetas HTML](#️-etiquetas-html)
+    - [⚙️ Atributos HTML](#️-atributos-html)
+    - [✅ Validadores HTML y CSS](#-validadores-html-y-css)
+  - [CSS](#css)
+    - [Incluir CSS](#incluir-css)
+  - [📀 Virtualización](#-virtualización)
+  - [MySQL](#mysql)
+  - [Instalar Workbench](#instalar-workbench)
 
 ---
 
-### Repaso Git Hub:
-- git status para saber como esta el repositorio, si hay algo nuevo o no sincronizado o pendiente de comitear.
-- git add . para subir todod al repositorio local.
-- git commit -m "mensaje con informacion de comit"
-- git push, solo si estamos seguros de estar todo bien porque esto sube a la nube. :+1:
-- git pull, para bajar repositorio a mi repositorio local.
-- Podemos consutar historial de versiones de nuestro repositorio.
-- git clone para bajar reposotorio de la nuebe la primera vez, desde la web en el boton "code" podemos copiar el url y en consola hacemos el clon con esa direccion URL. 
+## 🔀 Arranque dual
+- Los SO son independientes  
+- El gestor de arranque de Linux: Grub  
+- El gestor de arranque de Win: MBR  
+- Windows versión: 11 Pro/Home  
+- Linux distribución: Mint Cinnamon → Ubuntu → Debian  
+- Núcleos: GNU/Linux → Unix  
 
 ---
 
-Para añadir personas colaboradoras al proyecto de Git Hub:
-- Entramos en el repositorio por la web.
-- En settings > Collaborators > Add people.
-- Al destinatario le llegara una invitacion que debera aceptar y poder colaborar con el proyecto.
+## 💻 IDEs
+- Para MarkDown: Notable  
+- Para código: Visual Studio Code  
+- Oficial Java: Apache Netbeans  
 
 ---
 
-### Probando Mermaid y plugin para Visual Studio Code
+## ☕🖥️ Instalar Java y VSC
 
-```mermaid
-graph LR;
-    A[GIT ADD] -->B[GIT COMMIT -m]-->C[GIT PUSH];
-    D[GIT PULL]-->E[PARA TRAER REPOSITORIO EN LOCAL];
-    F[GIT STATUS]-->G[PARA COMPROBAR REPOSITORIO]
-    
+### ☕ Instalar Java  
+- LTS → Soporte extendido  
+1️⃣ Ir a [🔗 Oracle Java](https://www.oracle.com/es/java/technologies/downloads/)  
+2️⃣ Descargar versión *LTS (21)*  
+3️⃣ Configurar **variables de entorno**  
+   - ⌨️ `Win + R` → `cmd`  
+   - ⚙️ `SystemPropertiesAdvanced`  
+     *(📁 Panel de Control > 🖥️ Sistema > ⚙️ Configuración avanzada del sistema > 🌐 Variables de entorno)*  
+   - 🧬 Variables de Entorno  
+   - 🛣️ `Path` (del sistema): `C:\Program Files\Java\jdk-21`  
+
+---
+
+## 🖥️ Comandos de Consola
+
+### 🪟 Windows (MS-DOS/Powershell)
+- `cmd` → iniciar consola  
+- `dir` → ver directorio  
+- `cd` → cambiar directorio  
+- `cd..` → subir nivel  
+- `cls` → limpia consola  
+
+### 🐧 Linux
+- `clear` → limpia consola  
+- `sudo` → privilegios superusuario  
+- `apt update` → actualizar repos  
+- `apt upgrade` → actualizar apps  
+- `apt install paquete` → instalar paquete  
+- `mkdir` → crear directorio  
+- `ls` → lista contenido  
+- `pwd` → ruta actual  
+
+### 🧑‍💻 Instalar Visual Studio Code (VSC)  
+1️⃣ Ir a [🔗 VS Code Download](https://code.visualstudio.com/download#)  
+2️⃣ Descargar `System Installer x64`  
+3️⃣ Instalar extensiones:  
+   - 🌍 **Spanish**  
+   - 📦 **Extension Pack for Java** (Microsoft)  
+   - 📝 **Markdown All in One**  
+     - F1 > markdown all in one: create table of contents  
+
+---
+
+## 🔧 GIT
+
+### 📋 Listado de comandos
+- `git init` → iniciar repo  
+- `git clone "repo"` → clonar repo  
+- `git status` → estado  
+- `git add .` → añadir todo  
+- `git add notes/Apuntes.md` → archivo individual  
+- `git commit -m "mensaje"` → guardar  
+- `git commit -a -m "mensaje"` → añadir y guardar  
+- `git push` → subir repo  
+- `git pull` → descargar repo  
+
+- `git remote`  
+  - `git remote add` → añadir remoto  
+  - `git remote -v` → ver remotos  
+- `git fetch` → descargar sin fusionar  
+- `git merge` → fusionar cambios  
+
+#### 🌿 Ramas GIT
+- `git branch "rama"` → crear rama  
+- `git checkout "rama"` → cambiar rama  
+- `git merge rama` → fusionar ramas  
+
+Pasos:  
+1️⃣ `git checkout rama_destino`  
+2️⃣ `git merge rama_a_fusionar`  
+3️⃣ `git commit -m "Rama Fusionada"`  
+
+---
+
+## 👥 Roles Proyectos
+
+### 🧑‍🎓 Junior (< 2-4 años)
+- Front: 25k-30k  
+- Back: 20k-25k  
+- FullStack: 28k-32k  
+
+### 🧑‍💼 Senior (> 2-4 años)
+- Front: 30k-35k  
+- Back: 25k-30k  
+- FullStack: 32k-35k  
+
+- 🧠 Analista +5k  
+- 🧑‍🏫 Consultor +5-8k  
+- 🏗️ Arquitecto +10-15k  
+
+---
+
+## 🌐 HTML
+
+### 🏷️ Etiquetas HTML
+Flechas: → , ← , ↑ , ↓ , ↗ , ↖ , ↘ , ↙
+- `html` → (1) general
+- `head` → (1) Cabeceras
+- `body` → (1) Cuerpo
+  - `h1`...`h6` → (2) secciones
+  - `p` → (2) Párrafos
+    - `strong` → (3) Negrita 
+    - `em` → (3) Cursiva
+    - `ins`→ (3) Subrayado 
+    - `del` → (3) tachado  
+    - `span`→ (3) fragmento texto 
+  - `blockquote` → (2) Cita
+    - `sup` → (3) Superindice
+    - `sub`→ (3) subindice
+  - `abbr` → (2) Abreviatura 
+  - `dfn` → (2) Lista definición 
+    - `br`→ (3) Salto de líbea 
+  - `pre` → (2) Texto preformateado
+  - `code` → (2) Código
+
+- `ul`→ (2) Lista sin ordenar
+- `ol` → (2) Lista ordenada
+  - `li` → (3) Elemento de lista
+
+```html
+<!-- Emmet: ul>li*5{Elemento 1.$} -->
+<ul>
+  <li>Elemento 1.1</li>
+  <li>Elemento 1.2</li>
+  <li>Elemento 1.3</li>
+  <li>Elemento 1.4</li>
+  <li>Elemento 1.5</li>
+</ul>
 ```
----
 
-Comandos adicionales menos usados pero importantes:
-- git remote, repositorios remotos
-- git remote add, añadre repo remoto
-- git fetch descarga cambios sin fusionar
-- git merge, fusiona los cambios
+- `img` → (2) Imagen
+- `map` → (2) Mapa de imágenes
+  - `area` → (3) Área (Circulo, polígono, rectángulo) 
 
----
+- `table` → (2) Tabla 
+  - `caption`→ (3) Titulo
+  - `thead`→ (3)[Sem] Cabecera tabla
+  - `tbody`→ (3)[Sem] Cuerpo
+  - `tfoot` → (3)[Sem] Pie tabla
+    - `tr` → (3-4) Fila
+      - `th` → (4-5) Celda cabecera
+      - `td`→ (4-5) Celda
+ 
+- `form` → (2) Formulario 
+  (Post|Get), encriptado o por URL
+  - `fieldset`→ (3) Recuadro
+    - `legend` → (4) Titulo recuadro
+    - `label`→ (4) Etiqueta de campo
+    - `input`→ (4) Campo
+    - `textarea` → (4) Área de texto 
+  - Tipos Inputs: text, password, date, number, email, tel, submit, reset  
+  - Atributos: required, placeholder, value, min, max  
 
-## Ramas git:
+> Etiquetas semánticas. Resto de etiquetas aumentan un nivel...
+- `header` → (2) Cabecera de página
+- `nav` → (2) Navegación
+- `main` → (2) Zona principal
+- `aside` → (2) Lateral
+- `section` → (2) Sección
+- `article` → (2) Contenido
+> IMPORTANTE: Todos los section y article deben tener un h2...h6 o en su defecto un atributo aria-label
+- `figure` → (2) Sección multimedia
+  - `figcaption` → (3) Pie
+- `footer` → (2) pie
 
-- Las ramas son necesarias cuando hay varias personas trabajando, se empieza siempre por una rama Master o Main.
-- En la practica se suele tener varios ramas, una para desarrollo o development y a su vez se crean ramas para implantar mejoras o features.
-- git chetout "rama" para cambiar de una rama a otra.
-- git merge "rama" fusiona ramas. Es recomendable por ejemplo para fusionar rama feature-y a develop hacer estos pasos:
-  - git status
-  - git checkout "rama develop" - para crear una rama
-  - git merge feature-y
-  - git commit -m "fusion"
+### ⚙️ Atributos HTML
+- `id` → identificador único  
+- `class` → clase reutilizable  
+- `style` → CSS inline  
 
----
-
-## Roles proyetos :
-#### Junior menos de 2 años
-- Junior FrontEnd: entre 25 y 30 mil euros año. 
-- Junior BackEnd: entre 20 y 25 mil euros año.
-- Junio FullStack: entre 28 y 32 mil euros años.
-
-#### Senior mas de 2 años
-- Senior FrontEnd: entre 30 y 35 mil euros año. 
-- Senior BackEnd: entre 25 y 30 mil euros año.
-- Senior FullStack: entre 32 y 35 mil euros años.
-
-#### Analista
-- Sumaran 5 mil.
-#### Consutor
-- Sumar 5 o 8 mil mas.
-
-
----
-
-# APUNTES DIA 3 - MIERCOLES
-
-## Practicamos Ramas:
-
-Hacemos ejercicio con un repositorio para simular trabajo de la clase donde cada uno o por equipos una tarea y creamos un repositorio Practicas Equipos y creamos una rama feature/juanma
-
----
-**mira repo de apuntes de compañesros de trabajo equipo**
-## Virtualización:
-
-# 🖥️ Virtualización y Emulación de Sistemas
-
-## 📘 ¿Qué es la Virtualización?
-
-La **virtualización** es una técnica que permite ejecutar varios sistemas operativos de forma simultánea en una sola máquina física, utilizando software llamado **hipervisor**.
-
-- 🧠 El sistema operativo "invitado" corre dentro de una **máquina virtual (VM)**.
-- 🧩 Comparte recursos del hardware real, como CPU, RAM y disco.
-- 🧱 Se usa para pruebas, entornos de desarrollo, servidores y más.
-
-### Tipos de Virtualización:
-- 🖥️ **Virtualización completa**: el sistema invitado no sabe que está virtualizado.
-- 🧬 **Paravirtualización**: el sistema invitado está modificado para ser más eficiente dentro del entorno virtual.
+### ✅ Validadores HTML y CSS
+- HTML → [https://validator.w3.org/](https://validator.w3.org/)  
+- CSS → [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/)  
 
 ---
 
-## 🎮 ¿Qué es la Emulación?
+## CSS
 
-La **emulación** simula por software un sistema completamente diferente al hardware real. Permite ejecutar sistemas diseñados para otra arquitectura.
+- https://csszengarden.com/
 
-- 🕹️ Ejemplo: correr un sistema de Nintendo en PC.
-- 🐢 Suele ser más lenta que la virtualización.
-- 🧪 Útil para probar software antiguo o de otra plataforma.
+### Incluir CSS
+1. CSS en línea
+2. CSS en la cabecera (style)
+3. CSS externo (link)
+- `footer` → (2) pie
+
 
 ---
 
-## 📦 Uso de VirtualBox
+## 📀 Virtualización
 
-**VirtualBox** es un software gratuito de Oracle que permite crear y administrar máquinas virtuales.
-
-### ✅ Instalación de VirtualBox en Windows/Linux/Mac:
-
-1. 🧭 Ve a la web oficial: [https://www.virtualbox.org/](https://www.virtualbox.org/)
-2. 🔽 Descarga la versión adecuada para tu sistema.
-3. 🧰 Instala siguiendo el asistente.
-4. (Opcional) Instala el **Extension Pack** para funciones extra como USB 2.0/3.0, RDP, etc.
-
----
-
-## 🛠️ Crear una Máquina Virtual en VirtualBox
-
-1. 📁 Abre VirtualBox y haz clic en **"Nueva"**.
-2. 🏷️ Asigna un nombre, tipo de sistema y versión (por ejemplo, Ubuntu 64-bit).
-
----
-
-Hacemos test, y apuntate que el jueves 3 de Junio es examen tipo test.
-
----
-
-** Markdown: Indices y convertir a pdf con Visual Studio Code
-** Bajamos extension para Visual Studio Markdown all in one
-
-Hola hola indices y pies de pagina [^1]
-
-### F1 y le damos crear tabla de contenido
+- 🧰 Oracle VirtualBox v7  
+  - `sudo apt install virtualbox` → (7.0.16)  
+  - [🔗 Linux Downloads](https://www.virtualbox.org/wiki/Linux_Downloads) (7.1.10)  
+- 🖥️ VMWare  
+- 🐶 Puppy Linux ISO  
+  - [🔗 BookwormPup64 10.0.10](https://distro.ibiblio.org/puppylinux/puppy-bookwormpup/BookwormPup64/10.0.10/)
 
 
-[^1]:esto es el objetivo
+## MySQL
 
-### Incisos Opos:
-#### Hay plaza de A2 C1 que requieren carrera pero con promocion interna puedes hacer la prueba una vez dentro.
+```console
+sudo apt update
+sudo apt upgrade
+# Instalamos el servidor y el cliente
+sudo apt install mysql-server mysql-client
 
-***https://www.rptage.com/pf/funcionarios.php para ver plazas vacantes en el ayuntamiento o municipio que estes buscando.
+# Para comprobar
+sudo service mysql status
 
-### Secciones en Html ayudan a organizar y dividir la pagina:
+# Cambiar la contraseña del root
+sudo mysql -u root
+ALTER USER 'root'@'localhost'
+IDENTIFIED WITH mysql_native_password
+BY 'admin';
+FLUSH PRIVILEGES;
+```
 
-  1. #### se suele usar los h1, ...h6.
-  2. #### tam
+## Instalar Workbench
 
----
-
-
-
-
-
-
-
+```console
+cd Descargas
+wget https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community_8.0.40-1ubuntu24.04_amd64.deb
+sudo apt install ./mysql-workbench-community_8.0.40-1ubuntu24.04_amd64.deb
+```
