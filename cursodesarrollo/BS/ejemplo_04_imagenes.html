@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1">Imagenes y Slider Carruisel </h1>
+    </header>
+    <main id="carouselExampleCaptions" class="carousel slide w-50">
+        <section class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </section>
+        <section class="carousel-inner">
+            <figure class="carousel-item active">
+                <img src="img/jean-michel-jarre-sevilla1.webp" class="d-block w-100" alt="...">
+                <figcaption class="carousel-caption d-none d-md-block bg-secondary">
+                    <h5>Aqui el frances creia que estaba en OT</h5>
+                    <p>El hombre estaba tan mareado en Sevilla con la calor que esta liado</p>
+                </figcaption>
+            </figure>
+            <figure class="carousel-item">
+                <img src="img/jean-michel-jarre-sevilla2.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-secondary">
+                    <h5>Pidio el envio de vestuario por SEUR y obviamente se puedo lo que llevaba"></h5>
+                    <p>Se pueso al final el pijama de su abuela de Cuenca</p>
+                </div>
+            </figure>
+            <figure class="carousel-item">
+                <img src="img/jean-michel-jarre-sevilla3.webp" class="d-block w-100" alt="...">
+                <figcaption class="carousel-caption d-none d-md-block bg-secondary">
+                    <h5>Aqui estaba echandose una cabezada el Sr. Jean</h5>
+                    <p>A Mr Jarre la noche le confunde y puso el organillo en auto y se echo una siesta</p>
+                </figcaption>
+            </figure>
+        </section>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </main>
+    <main class="contair text-center bg-info p-3 m-3">
+        <figure>
+            <img src="img/jean-michel-jarre-sevilla1.webp" alt="imagen 1" class="img-fluid rounded">
+        </figure>
+        <figure>
+            <img src="img/jean-michel-jarre-sevilla1.webp" alt="imagen 1" class="img-thumbnail w-25">
+        </figure>
+    </main>
+
+    <footer>
+        <hr>
+    </footer>
+
+
+
+</body>
+
+</html>
