@@ -1,7 +1,7 @@
 ---
 title: "\U0001F4D8 Apuntes Clase Iván"
 created: '2025-07-02T12:29:52.741Z'
-modified: '2025-07-09T12:09:44.374Z'
+modified: '2025-07-15T07:31:55.401Z'
 ---
 
 # 📘 Apuntes Clase
@@ -276,4 +276,191 @@ FLUSH PRIVILEGES;
 cd Descargas
 wget https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community_8.0.40-1ubuntu24.04_amd64.deb
 sudo apt install ./mysql-workbench-community_8.0.40-1ubuntu24.04_amd64.deb
+
+
+## Apuntes 14-07-25
+- Instalación de Docker
+Docker se basa en servicios Linux, su núcleo de servicio esta basado en Linux.
+
+Es un "portacontenedores".
+Puedes tener un numero de "contenedores" hasta donde tu disco duro te llege.
+
+Las máquinas virtuales y dockers están aislados del resto del sistema. Se pueden usar a la vez pero los conceptos son distintos:
+
+Cada máquina virtual tiene su propio sistema operativo.
+La máquina virtual tiene el hipervisor que te permite comunicar la virtual con la máquina física (eso no está en docker).
+Los contenedores comparten el kernel* entre ellos, que solo contienen binarios y librerias.
+El kernel* es como el gerente, que se encarga de coordinar lo que pide el software con lo que puede hacer el hardware.
+El kernel (o núcleo) es el corazón del sistema operativo. Es un programa fundamental que se encarga de comunicar el hardware de tu computadora con el software que estás usando.
+
+Para Windows 10
+Estos dos comandos:
+
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
+wsl --install -d ubuntu
+Para Windows 11
+Intalar el wsl2 (windows subsistem for linux), para instalar una distribución Linux en Windows
+Abrimos powersehll > Abrimos como administrador > y ejecutamos los siguientes comandos:
+wsl install
+Reiniciar el PC
+wsl --list --verbose
+Para Linux
+instalar terminal de genome:
+sudo apt install gnome-terminal
+
+actualizar
+sudo apt update
+sudo apt upgrade
+
+instalamos:
+sudo apt install apt-transport-https ca-certificates curl software-properties-common lsb-release
+
+te pilla la clave privada, copiamos esto entero en la terminal:
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+luego copiamos entero:
+echo
+"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg]
+https://download.docker.com/linux/ubuntu
+$(lsb_release -cs) stable" |
+sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+despues este:
+sudo nano /etc/apt/sources.list.d/docker.list
+
+borramos xia, escribimos noble
+
+ctrl + o y ctrl + x
+
+cd Descargas
+
+instalar cliente y demonio:
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+el servicio del sistema que comunica:
+ls /dev/kvm
+
+OPCIONAL MANUALMENTE:
+(opcional) Habilitamos manualmente KVM
+modprobe kvm
+
+Descargar:
+
+https://www.docker.com/products/docker-desktop/
+
+Descargar para linux
+https://docs.docker.com/desktop/setup/install/linux/ubuntu/
+
+Nos descargamos el DEB package
+Luego en la terminal:
+
+sudo apt install ./docker-desktop-amd64.deb
+
+Seguir pasos para hacer GPG Key y así poder acceder a docker desktop.
+https://docs.docker.com/desktop/setup/sign-in/#credentials-management-for-linux-users
+Usuario público:
+0D4E128E7C8F0C6ED259257557F8937C9DC56986
+Nos vamos a la carpeta :
+
+cd /home/angel/Documentos/Docker
+Luego copiamos (current es la version 24):
+
+docker pull node:current
+Luego (si necesitamos la version 18):
+
+docker pull node:18
+Para ver que hay en el repositorio metemos en la terminal:
+
+docker images
+Para reproducir este html que escribimos en la consola:
+-echo "
+
+Hola desde Node
+" > index.html
+luego escribimos este comando entero en linux:
+
+docker run -d --name nodeweb
+-v "$PWD":/web
+-p 3000:3000
+node:current
+sh -c "npm install -g http-server && http-server /web -p 3000"
+Comandos para start y stop:
+
+docker start
+docker stop
+Los contenedores arrancados se ven con:
+
+docker ps
+Para parar el contenedor:
+
+docker stop (escirbir nº id sin parentesis)
+Para borrar el contenedor:
+
+docker rm (escribir id)
+Antes de borrar hay que parar
+Este comando sirve para ver los contenedores parados:
+
+docker ps -a
+Para eliminar la imagen:
+
+docker rmi node:18
+docker rmi node:current
+Descargar mysql:
+
+docker pull mysql:5.7
+
+docker run -d
+--name mysql57
+-e MYSQL_ROOT_PASSWORD=root
+-e MYSQL_DATABASE=tienda
+-p 3304:3306
+mysql:5.7
+
+docker exec -it mysql57 mysql -u root -p
+
+Para salir de mysql:
+
+exit
+Mongo DB
+Base de datos no relacional
+Saca datos concretos muy rapido.
+Se usa en Disney, Amazon...
+
+https://hub.docker.com/_/mongo
+
+docker pull mongo
+Inspeccionar caracteristicas de las imagenes:
+
+docker image inspect mongo
+Definir (crear) el contenedor:
+
+docker create --name miMongo mongo:latest
+Para arrancarlo:
+
+docker start
+Para pararlo:
+
+docker stop miMongo
+Para eliminarlo:
+
+docker rm miMongo
+(Hemos eliminado el contenedor pero no la imagen)
+
+docker run -d
+--name miMongoAvante
+-p 27017:27017
+-v mongo_data:/data/db
+mongo
+
+Para windowns es con comilla:
+
+docker run -d --name miMongoAvante
+-p 27017:27017 -v mongo_data:/data/db
+mongo
+Para entrar en la consola de mongodb.
+
+docker exec -it miMongoAvante mongosh
 ```
