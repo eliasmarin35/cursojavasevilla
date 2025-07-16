@@ -1,7 +1,7 @@
 ---
 title: 'CSS 3:'
 created: '2025-07-03T11:07:57.574Z'
-modified: '2025-07-08T09:11:43.174Z'
+modified: '2025-07-16T10:52:34.059Z'
 ---
 
 # CSS 3:
@@ -118,8 +118,14 @@ p span a {
   - 'text-transform' - modo (mayusculas, minusculas. oración, etc)
   - 'vertical-align' - alineacion vertical
   - text -indent - sangria
-  - letter-spacing - esciado entre letras
+  - letter-spacing - espaciado entre letras
   - word-spacing - espacio entre palabras
   - white-space - espacios en blanco
+
+  ---
+  #### Aqui copia lo que suba Ivan de CSS a sus apuntes para tener ambas versiones en este documento.
+  ---
+
+
 
 
