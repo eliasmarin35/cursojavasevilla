@@ -1,10 +1,12 @@
 package cursodesarrollo.CodJava.ejemplo01_holamundo;
 
 /* Clase -> nombre del archivo sin .java */
+
 public class ejemplo_01_holamundo {
-    //snippet main
+    //Abrevia. main
+
     public static void main(String[] args) {
-        //snipet sout
+        //Abrevia. sout
         System.out.println("Hola Mundillo");        
     }
     
