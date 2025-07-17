@@ -1,9 +1,10 @@
 ---
-title: Untitled
+title: '#APUNTES IVÁN'
 created: '2025-07-02T12:29:52.741Z'
-modified: '2025-07-16T11:19:01.563Z'
+modified: '2025-07-16T20:52:49.300Z'
 ---
 
+#APUNTES IVÁN
 ---
 title: "\U0001F4D8 Apuntes Clase Iván"
 created: '2025-07-02T12:29:52.741Z'
