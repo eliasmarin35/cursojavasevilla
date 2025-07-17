@@ -1,7 +1,7 @@
 ---
 title: 'JAVA INTRODUCCIÓN:'
 created: '2025-07-17T07:33:42.000Z'
-modified: '2025-07-17T09:16:35.762Z'
+modified: '2025-07-17T11:40:12.652Z'
 ---
 
 ## JAVA INTRODUCCIÓN:
@@ -26,4 +26,5 @@ Java es un lenguaje muy tipado y estricto debemos siempre declarar cualqueir var
 - Tipos de comas flotante:
   - float → es un coma flotante o decilmal, valores (-3,4³⁸ - 3,4³⁷)[4bytes]
   - double → es un decimal muy grande y rango de (1,79³⁰⁸)[8bytes]
+3. #### Ejemplo 03: Referencias :
 

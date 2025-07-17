@@ -25,9 +25,20 @@ public class ejemplo_02 {
         letra = 'I';
         int numeroEntero = 10;
         
-        System.out.println("Género es : " + genero);
+        float numDecimal = 9.6f;
+        double numDecimalTocho = 7.5;
+        
+        
+        
+        // Impresion de variables :
+        
+        System.out.println("Tu género es : " + genero);
         System.out.println("Letra es : " + letra);
         System.out.println("Mi número es : " + numeroEntero);
+        System.out.println("Mi decimal es " + numDecimal);
+        System.out.println("Mi decimal tocho es :" + numDecimalTocho);
+        
+        
 
     }
 
