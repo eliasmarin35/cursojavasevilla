@@ -12,16 +12,16 @@ Dada una nota numérica del 0 al 10, muestra:
 
 public class ejercicio_02 {
     public static void main(String[] args) {
-        int nota = 1;
+        float nota = 6.5f;
         
-        if (nota >= 5) {
-            if ((nota == 5) || (nota == 6)) {
+        if (nota >= 5.0) {
+            if ((nota == 5.0f) || (nota == 6.0f)) {
                 System.out.println("Tiene un aprobado.");
             }
-            if ((nota == 7) || (nota == 8)) {
+            if ((nota >= 7.0f) || (nota <= 8.0f)) {
                 System.out.println("Tiene un Notable.");
             }
-            if (nota >= 9) {
+            if (nota >= 9.0f) {
                 System.out.println("Tiene un Sobresaliente.");
             }
         } else {
