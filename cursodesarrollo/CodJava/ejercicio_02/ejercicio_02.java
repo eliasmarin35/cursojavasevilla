@@ -1,4 +1,5 @@
 package ejercicio_02;
+
 /** Con if
  * 📊 Evaluación de nota:
 Dada una nota numérica del 0 al 10, muestra:
