@@ -1,4 +1,4 @@
-package cursodesarrollo.CodJava.ejemplo_02;
+package ejemplo_02;
 
 // Ejemplo 2 : Tipado en Java
 

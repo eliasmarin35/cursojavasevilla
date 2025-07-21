@@ -1,4 +1,4 @@
-package cursodesarrollo.CodJava.ejemplo01_holamundo;
+package ejemplo01_holamundo;
 
 /* Clase -> nombre del archivo sin .java */
 
