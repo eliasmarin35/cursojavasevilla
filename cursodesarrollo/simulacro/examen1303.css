@@ -1,66 +1,69 @@
-/* Jesús Elías Marín Fernández */
 /* GENERALES */
-/*01*/
-* {
-    padding: 0;
-    margin: 0;
-}
+/* 01. */
 @font-face {
-        font-family: 'Montserrat';
-        src: url('Montserrat/Montserrat-VariableFont_wght.ttf');
+    font-family: Montserrat;
+    src: url('Montserrat/Montserrat-VariableFont_wght.ttf');
 }
-/*02*/
+
+/* 02. */
 body {
-   font-family: 'Montserrat', s sans-serif;
-   font-size: 14px;
+    font-family: Montserrat;
 }
 
 /* ------- Lateal Izquierdo ------- */
+/* 03. */
 body > aside {
-    /* 04 */
+    background: linear-gradient(to right, lightgrey , white);
+}
+
+/* 04. */
+body > aside {
     position: absolute;
     width: 20%;
     top: 2%;
     left: 2%;
-    /* 03 */
-    background: linear-gradient(lightgrey, white);
-    
 }
-/* 05 */
+
+/* 05. */
 body > aside > figure > img {
     width: 100%;
     margin-bottom: 10px;
 }
-/* 06 */
+
+/* 06. */
 body > aside > ul {
     list-style: none;
+    line-height: 1.125em;
     font-size: 0.8em;
-    line-height: 1.125emn;
     margin-left: -10px;
-    color: #0645AD;
+    color:  #0645AD;
 }
 
-/* 07 */
-body > aside > ul > li:nth-of-type(1) {
-    text-shadow:blue, 1px 1px 1px;
+/* 07. */
+/* body > aside > ul > li:first-of-type */
+/* body > aside > ul > li:nth-of-type(1) */
+/* body > aside > ul :first-child */
+body > aside > ul :nth-child(1) {
+    text-shadow: blue 1px 1px 1px;
 }
-/* 08 */
-body > aside > ul > li + li {
+
+/* 08. */
+/*body > aside > ul > li + li */
+body > aside > ul > :not(li:nth-of-type(1))   {
     text-indent: 10px;
-    
 }
-/* 09 */
+
+/* 09. */
 body > aside h2 {
-    color: darkgray;
+    color: rgb(30%, 30%, 30%);  /* darkgrey */
     font-size: 1.1em;
     margin-left: 10px;
     font-variant: small-caps;
-
-
 }
+
 /* --------------------------------------------------- */
 /* ------- PRINCIPAL ------- */
-/* 10 */
+/* 10. */
 main {
     background-color: white;
     position: absolute;
@@ -68,121 +71,191 @@ main {
     top: 2%;
     left: 25%;
 }
-/* 11 */
-header {
-    background: radial-gradient(ellipse at top, lightgrey, white);
-    position: absolute;
-    width: 60%;
 
+/* 11. */
+/* radial-gradient -> ellipse at top 
+lineal-gradient -> to top */
+main > header {
+    background: radial-gradient(ellipse at top,
+     lightgrey, white);
+     overflow: hidden;
 }
-/* 12 */
-header > ul {
+
+/* 12. */
+main > header ul {
     float: left;
     width: 40%;
     padding: 10px;
 }
-/* 13 */
-header > ul > li {
+
+/* 13. */
+main > header ul li {
     list-style: none;
     display: inline;
 }
-/* 14 */
-header > form {
-    width: 40%;
+
+/* 14. */
+main > header form {
+    width: 55%;
+    float: right;
 }
-/* 15  y 16*/
-main > header > form {
+
+/* 15. */
+/* .fa { } */
+
+/* 16. */
+/* .form-control { } */
+main > header form {
     margin-top: 15px;
 }
 
-/* 17 */
-main > header > form > input[type="submit"]{
-    border: 1px solid, blue;
+/* 17. */
+main > header form input[type="submit"] {
+    border: 1px solid blue;
     margin-left: 5px;
-
-}
-/* 18 */
-main section figure img {
-    width: 90%;
-
-}
-/* 19 */
-main section figure img:hover {
-    visibility: hidden;
 }
 /* --------------------------------------------------- */
 /* ------- SECCIÓN PRINCIPAL ------- */
+/* 18. */
+main section figure img {
+    width: 90%;
+}
+/* 19. */
+main section figure img:hover {
+    visibility: hidden;
+}
 
-/* 20 */
-main > section {
+/* 20. */
+main section {
     width: 60%;
     float: left;
 }
 
-/* 21 */
-
+/* 21. */
 main aside {
     float: right;
     width: 35%;
-    margin-right: 20px;
-
 }
 
-/* 22 */
+/* 22. */
 main section p {
     font-size: 0.9em;
     line-height: 1.4em;
     padding-right: 20px;
     text-align: justify;
     text-indent: 10%;
-    letter-spacing: 0.5%;
+    letter-spacing: 0.5px;
     word-spacing: 1px;
-}
-
-
-/* 23 */
-main > section > ol {
-    background: linear-gradient(to margin-bottom, lightgrey, white);
-    font-size: 0.8em;
-    width: 70%;
-    margin: auto;
-    
-}
-main section ol {
-    list-style: none;
-}
-
-/* 24 */
-main section ol ol li {
-    font-weight: bold;
-}
-
-/* 25 */
-
-/* 26 */
-
-/* 27*/
-
-/* 28 */
-main section table caption:hover {
-    box-shadow: 2px darkgray;
 }
 
 /* --------------------------------------------------- */
 /* ------- LISTA MAIN ------- */
+/* 23. */
+main section > ol {
+    background: linear-gradient(to bottom, lightgrey, white);
+    font-size: 0.8em;
+    width: 70%;
+    margin: auto;
+}
 
+main section ol {
+    list-style: none;
+}
+
+/* 24. */
+main section ol ol ol li {
+    font-weight: bold;
+}
+
+/* 25. */
+
+
+/* 26. */
 /* --------------------------------------------------- */
 /* ------- TABLA MAIN ------- */
-table th, table td {
-    border: 2px solid rgb(78, 71, 71);
+/* 27. */
+main table caption {
+    caption-side: top;
+}
+main table caption:hover {
+    box-shadow: 2px 2px 2px darkgray;
 }
 
+
+/* 28. */
+main section table caption {
+    font-size: 0.85em;
+}
+
+/* 29. */
+main section table:active{
+    width: 80%;
+    margin: 40px 0px;
+}
+/* 30. */
+main secction table, main section table th, main section table td{
+    border: 1px solid lightgray;
+}
+/* 31. */
+main section table th, main section table td{
+    padding: 6px;
+}
+
+/* 32. */
+main section table td[rowspan] {
+    color: rgb(177, 68, 68);
+    
+}
 /* --------------------------------------------------- */
 /* ------- TABLA LATERAL --------*/
-main > section > table {
-    position: absolute;
+/* 33. */
 
+main aside h2 {
+    margin-top: 20px;
+    font-variant: small-caps;
+    font-size: 3em;
+    padding: 15px;
+    border-top-color: lightgrey;
+    border-bottom-color: lightgray;
+    border-right-color:darkgrey;
+    border-left-color:darkgrey;
+    border-style: double;
+    border-width: 5px;
 }
+/* 34. */
+main aside h2 {
+    border-radius: 10px/40px;
+}
+/* 35. */
+main aside table p {
+    background-image: url(Picto_infobox_map.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 60px;
+}
+/* 36. */
+main aside table caption {
+    width: 240px;
+    height: 100px;
+    overflow: scroll;
+    background: linear-gradient(to right, lightgrey, white);
+}
+
 /* --------------------------------------------------- */
 /* ------- PIE DE PÁGINA --------*/
-
+/* 37. */
+body > footer {
+    margin: 20px 0px;
+    position: absolute;
+    left: 30%;
+    top: 180%;
+    font-size: 1em;
+} 
+/* 38. */
+body > footer:active {
+    transition-property: width, font-size;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+    font-size: 1.5em;
+}
